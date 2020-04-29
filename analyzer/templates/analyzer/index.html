@@ -4,10 +4,12 @@
     <meta charset="utf-8">
   </head>
   <body>
+    <h1>応募者数を予測</h1>
     <form action="" method="POST" enctype="multipart/form-data">
       {% csrf_token %}
       {{ form.as_table }}
       <button type="sumbit">Upload</button>
     </form>
+    <a href={{ download_path }}>予測結果をダウンロード</a>
   </body>
 </html>
