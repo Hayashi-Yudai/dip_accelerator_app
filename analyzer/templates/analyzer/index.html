@@ -5,11 +5,16 @@
   </head>
   <body>
     <h1>応募者数を予測</h1>
-    <form action="" method="POST" enctype="multipart/form-data">
-      {% csrf_token %}
-      {{ form.as_table }}
-      <button type="sumbit">Upload</button>
-    </form>
-    <a href={{ download_path }}>予測結果をダウンロード</a>
+    <div style="margin:20px 0">
+      ソースコードは<a href="https://github.com/Hayashi-Yudai/dip_accelerator_app">GitHub</a>にあります。
+    </div>
+    <div class="">
+      <form action="" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_table }}
+        <button type="sumbit">Upload</button>
+      </form>
+      <a href={{ download_path }}>予測結果をダウンロード</a>
+    </div>
   </body>
 </html>
