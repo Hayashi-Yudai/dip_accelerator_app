@@ -34,8 +34,8 @@ class MainView(View):
         return pd.read_csv(io.StringIO(text))
 
     def prediction(self, df):
-        model = pickle.load(open("./assets/model_brief.sav", "rb"))
-        cols = pickle.load(open("./assets/cols.pkl", "rb"))
+        model = pickle.load(open("/app/assets/model_brief.sav", "rb"))
+        cols = pickle.load(open("/app/assets/cols.pkl", "rb"))
 
         df_cut = df[cols]
         df_cut.fillna(0)

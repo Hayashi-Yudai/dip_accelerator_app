@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = "o9^l6*sa($l^iq$%v&nt+*jndb51jm5f2p84umb)2h3dk*6edm"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["dip-homework-dbswqgadcq-uc.a.run.app"]
 
 
 # Application definition
