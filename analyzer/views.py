@@ -23,8 +23,8 @@ class MainView(View):
             text += chunk.decode()
 
         df = pd.read_csv(io.StringIO(text))
-        model = pickle.load(open("model_brief.sav", "rb"))
-        cols = pickle.load(open("cols.pkl", "rb"))
+        model = pickle.load(open("./assets/model_brief.sav", "rb"))
+        cols = pickle.load(open("./assets/cols.pkl", "rb"))
 
         df_cut = df[cols]
         df_cut.fillna(0)
