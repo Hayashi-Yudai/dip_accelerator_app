@@ -4,7 +4,7 @@ dip の U29 データサイエンティストアクセラレーター課題の�
 
 ## requirements
 - Python 3.7
-- Django 3.0.5
+- Django 3.1.13
 - Scikit-learn
 - Pandas
 - Numpy
